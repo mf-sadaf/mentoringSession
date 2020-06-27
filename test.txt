@@ -1,1 +1,3 @@
 New file. 1st edition.
+
+This is new line. 2nd edition.
