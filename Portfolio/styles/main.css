@@ -1,0 +1,28 @@
+body{
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+.color--white{
+    color: #ffffff;
+}
+
+.color--black{
+    color: #000000;
+}
+
+.color--grey{
+    color: gray;
+}
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6,p,label{
+    color: white;
+}
+
+.text--alignment{
+    text-align: left;
+}
