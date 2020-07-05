@@ -1,0 +1,249 @@
+
+farha@DESKTOP-D4M8B3E MINGW64 ~
+$ cd Desktop/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop
+$ ls
+ b2001-portfolio.html
+'Class_05_June_29_2020 [Networking Basics, Servers, IP, Client].mp4'
+'Class_06_July_01_2020 [HTML, CSS, Creating Portfolio].mp4'
+ desktop.ini
+'Git Demonstration'/
+ Messenger.lnk*
+'Monitor.exe - Shortcut.lnk'*
+ MyPortfolio/
+'New folder'/
+ sadafJU/
+ Slack.lnk*
+ test.html
+ VivifyScrum.lnk*
+ Zoom.lnk*
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop
+$ cd MyPortfolio/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio
+$ ls
+images/  index.html  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio
+$ git init
+Initialized empty Git repository in C:/Users/farha/Desktop/MyPortfolio/.git/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/
+        index.html
+        styles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git add .
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git commit -m "Version 1.0"
+[master (root-commit) 115970a] Version 1.0
+ 4 files changed, 66 insertions(+)
+ create mode 100644 images/Naruto.jpg
+ create mode 100644 images/sadaf.jpg
+ create mode 100644 index.html
+ create mode 100644 styles/main.css
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git remote add origin https://github.com/mf-sadaf/mentoringSession.git
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git push -u origin master
+To https://github.com/mf-sadaf/mentoringSession.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mf-sadaf/mentoringSession.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git pull
+warning: no common commits
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0
+Unpacking objects: 100% (12/12), 1.04 KiB | 4.00 KiB/s, done.
+From https://github.com/mf-sadaf/mentoringSession
+ * [new branch]      master     -> origin/master
+ * [new branch]      sadaf      -> origin/sadaf
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+images/  index.html  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+images/  index.html  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git branch
+* master
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git git pull remote master
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git pull remote master
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git pull--help
+git: 'pull--help' is not a git command. See 'git --help'.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git push --help
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git fetch
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+images/  index.html  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ git clone https://github.com/mf-sadaf/mentoringSession.git
+Cloning into 'mentoringSession'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0
+Unpacking objects: 100% (12/12), 1.04 KiB | 3.00 KiB/s, done.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+images/  index.html  mentoringSession/  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ cd mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ ls
+hijibiji.txt  test.txt
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ cd ..
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ mv images mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+index.html  mentoringSession/  styles/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ mv index.html mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ mv styles mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ ls
+mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio (master)
+$ cd mentoringSession/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ ls
+hijibiji.txt  images/  index.html  styles/  test.txt
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ mkdir Portfolio
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ mv images Portfolio/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ mv styles Portfolio/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ mv index.html Portfolio/
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ ls
+hijibiji.txt  Portfolio/  test.txt
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ git add .
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Portfolio/images/Naruto.jpg
+        new file:   Portfolio/images/sadaf.jpg
+        new file:   Portfolio/index.html
+        new file:   Portfolio/styles/main.css
+
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ git commit -m "Version 1.0"
+[master bdfe780] Version 1.0
+ 4 files changed, 66 insertions(+)
+ create mode 100644 Portfolio/images/Naruto.jpg
+ create mode 100644 Portfolio/images/sadaf.jpg
+ create mode 100644 Portfolio/index.html
+ create mode 100644 Portfolio/styles/main.css
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ git remote add origin master
+fatal: remote origin already exists.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 115.21 KiB | 8.23 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mf-sadaf/mentoringSession.git
+   7d572f8..bdfe780  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$ nano log.txt
+
+farha@DESKTOP-D4M8B3E MINGW64 ~/Desktop/MyPortfolio/mentoringSession (master)
+$
